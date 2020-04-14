@@ -1,15 +1,13 @@
 import {handleActions} from "redux-actions";
-import _ from 'lodash'
 
-const INITIAL_STATE = []
+const INITIAL_STATE = { posts: [] }
 
-function new_post(posts, {description}) {
-    const biggestId = _.maxBy(posts, (p) => p.id)
-    return posts.concat({id: biggestId + 1, description: description})
+function get_post_success(action) {
+    return { posts : action.posts}
 }
 
 const reducer = handleActions(
-    { new_post },
+    { get_post_success },
     INITIAL_STATE
 )
 
