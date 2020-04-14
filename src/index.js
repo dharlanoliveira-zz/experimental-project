@@ -9,11 +9,13 @@ import {composeWithDevTools} from "redux-devtools-extension";
 import {applyMiddleware, createStore} from "redux";
 import {Provider} from "react-redux";
 import rootSaga from "./sagas";
+import thunk from 'redux-thunk';
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
     rootReducer, composeWithDevTools(
+        //applyMiddleware(thunk),
         applyMiddleware(sagaMiddleware),
     )
 );

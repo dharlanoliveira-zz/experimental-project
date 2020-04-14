@@ -3,7 +3,6 @@ import {handleActions} from "redux-actions";
 const INITIAL_STATE = { current: null }
 
 function http_error(_, action) {
-    console.log(action)
     return { current: action}
 }
 

@@ -2,6 +2,8 @@ import React, {useEffect, useRef} from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import _ from "lodash"
 import {postsActions} from "../actions/postsActions";
+import {loadPosts, newPost} from "../thunk/postsThunkActions";
+import {postsServices} from "../service/postsService";
 
 function PostsList() {
 
@@ -11,6 +13,7 @@ function PostsList() {
     const postDescriptionInput = useRef();
 
     useEffect(() => {
+        //dispatch(loadPosts())
         dispatch(postsActions.getPosts())
     }, [])
 
@@ -39,6 +42,7 @@ function PostsList() {
     function handleAddPost() {
         const postDescription = postDescriptionInput.current.value
         dispatch(postsActions.newPost(postDescription))
+        //dispatch(newPost(postDescription))
         postDescriptionInput.current.value = ""
     }
     
