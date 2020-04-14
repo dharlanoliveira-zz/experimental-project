@@ -1,14 +1,18 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import _ from "lodash"
-import {posts as postsActions} from "../actions/postsActions";
+import {postsActions} from "../actions/postsActions";
 
 function PostsList() {
 
     const dispatch = useDispatch()
-    const posts = useSelector(state => state.posts);
+    const posts = useSelector(state => state.posts.posts);
 
     const postDescriptionInput = useRef();
+
+    useEffect(() => {
+        dispatch(postsActions.getPosts())
+    }, [])
 
     function renderNoPosts(){
         return (
@@ -26,9 +30,9 @@ function PostsList() {
         )
     }
 
-    function renderPost(post){
+    function renderPost(post, index){
         return (
-            <li key={post.id}>{post.description}</li>
+            <li key={index}>{post.description}</li>
         )
     }
 

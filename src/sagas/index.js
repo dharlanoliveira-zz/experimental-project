@@ -1,12 +1,12 @@
-import {takeEvery, put} from "redux-saga/effects";
+import {takeEvery, call, put} from "redux-saga/effects";
 import {postsServices} from "../service/PostsService";
 
 export function* getPostsSaga() {
-    yield take('GET_POSTS');
     try {
         let posts = yield call(postsServices.getPosts)
         yield put({type: 'get_post_success', payload: posts});
     } catch (error) {
+        console.log(error)
         yield put({type: 'http_error', payload: error});
     }
 }

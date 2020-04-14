@@ -1,4 +1,4 @@
-import {AxiosInstance as axios} from "axios";
+import axios from "axios";
 
 function getPosts(){
     return axios.get('http://localhost:4000/posts')
