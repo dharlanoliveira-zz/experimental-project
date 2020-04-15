@@ -1,18 +1,18 @@
 import {handleActions} from "redux-actions";
 import reducer from "./postsReducer";
 
-describe('posts redux', () => {
+describe('posts reducer', () => {
     it('should get_post_success return posts', () => {
         const payload = { data: [
                 { description: "Hello World", language: "en" }
             ]}
-        const getPostsAction = {
+        const get_post_success = {
             type: "get_post_success",
             payload
         };
 
 
-        expect(reducer({},getPostsAction)).toEqual({
+        expect(reducer({},get_post_success)).toEqual({
             posts: [
                 { description: "Hello World", language: "en" }
             ]
@@ -20,12 +20,12 @@ describe('posts redux', () => {
     })
 
     it('should clear_post_success return empty posts', () => {
-        const getPostsAction = {
+        const clear_post_success = {
             type: "clear_post_success"
         };
 
 
-        expect(reducer({},getPostsAction)).toEqual({
+        expect(reducer({},clear_post_success)).toEqual({
             posts: []
         })
     })
