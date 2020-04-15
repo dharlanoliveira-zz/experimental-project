@@ -14,7 +14,7 @@ storiesOf('Posts List',module)
         return <PostsList/>
     })
     .add('Two posts', () => {
-        let payload =  { data: [{description: 'post1'},{description: 'post2'}]}
+        let payload =  { data: [{description: 'post1', language: 'pt'},{description: 'post2', language: 'en'}]}
         store.dispatch({type: 'get_post_success', payload})
         return <PostsList/>
     })

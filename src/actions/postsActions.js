@@ -5,5 +5,6 @@ function action(type, payload = {}) {
 
 export const postsActions = {
     newPost: description => action("new_post", {description}),
-    getPosts: () => action("get_posts")
+    getPosts: () => action("get_posts"),
+    clearPosts: () => action("clear_posts")
 }

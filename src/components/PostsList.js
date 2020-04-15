@@ -1,60 +1,75 @@
-import React, {useEffect, useRef} from "react";
-import { useDispatch, useSelector } from 'react-redux';
-import _ from "lodash"
+import React, {useEffect, useRef, useState} from "react";
+import {useDispatch, useSelector} from 'react-redux';
 import {postsActions} from "../actions/postsActions";
-import {loadPosts, newPost} from "../thunk/postsThunkActions";
-import {postsServices} from "../service/postsService";
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import TextField from "@material-ui/core/TextField";
+import {ItemsList} from "./ItemsList"
+import _ from "lodash"
+
 
 function PostsList() {
 
+    const [description,setDescription] = useState("")
     const dispatch = useDispatch()
-    const state = useSelector(state => state);
-    const posts = useSelector(state => state.posts.posts);
-
-    const postDescriptionInput = useRef();
+    const posts = useSelector(state => state.posts.posts)
 
     useEffect(() => {
-        //dispatch(loadPosts())
         dispatch(postsActions.getPosts())
-    }, [posts])
+    }, [dispatch])
 
-    function renderNoPosts(){
+    function renderNoPostsContent() {
         return (
-            <h3>Don't exist any post</h3>
+            <>
+                Don't exist any post
+            </>
         )
     }
 
-    function renderAllPosts(posts){
+    function renderPostContent(post) {
         return (
-            <div>
-                <ul>
-                    {posts.map(renderPost)}
-                </ul>
-            </div>
-        )
-    }
-
-    function renderPost(post, index){
-        return (
-            <li key={index}>{post.description}</li>
+            <>
+                {post.description} - {post.language}
+            </>
         )
     }
 
     function handleAddPost() {
-        const postDescription = postDescriptionInput.current.value
-        dispatch(postsActions.newPost(postDescription))
-        //dispatch(newPost(postDescription))
-        postDescriptionInput.current.value = ""
+        dispatch(postsActions.newPost(description))
+        setDescription("")
     }
-    
-    return (
-        <div style={{width: "200px"}}>
-            { !_.isEmpty(posts) && renderAllPosts(posts)}
-            { _.isEmpty(posts) > 0 && renderNoPosts()}
 
-            <input ref={postDescriptionInput} type="text" name="description"/>
-            <button id="adicionarPost" onClick={() => handleAddPost()}>Add post</button>
-        </div>
+    function handleClearPost() {
+        dispatch(postsActions.clearPosts())
+        setDescription("")
+    }
+
+    return (
+        <Grid container spacing={2}>
+            <Grid item xs={12} md={12} lg={12}>
+                    <ItemsList items={posts} emptyListRender={renderNoPostsContent}
+                               listItemRender={renderPostContent}/>
+            </Grid>
+
+            <Grid item xs={12} md={12} lg={12}>
+                <TextField type="text" name="description" id="standard-basic"
+                           label="Novo Post" value={description}
+                           onChange={(event) => {
+                                let { target: { value } } = event
+                                setDescription(value)
+                           }}/>
+            </Grid>
+            <Grid item xs={12} md={12} lg={12}>
+                <Button id="adicionarPost" onClick={() => handleAddPost()} variant="contained" color="primary">
+                    Add Post
+                </Button>
+                <Button id="adicionarPost"
+                        onClick={() => handleClearPost()} variant="contained" color="primary"
+                        disabled={_.isEmpty(posts)}>
+                    Clear posts
+                </Button>
+            </Grid>
+        </Grid>
     )
 }
 
