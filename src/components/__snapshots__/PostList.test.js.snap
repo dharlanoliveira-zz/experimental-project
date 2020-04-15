@@ -1,5 +1,473 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Items List Empty List 1`] = `
+<div>
+  <div
+    className="MuiBox-root MuiBox-root-34"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      empty
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Items List Twenty posts 1`] = `
+<div>
+  <div
+    className="MuiBox-root MuiBox-root-183"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 0
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-214"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 1
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-215"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 2
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-216"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 3
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-217"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 4
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-218"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 5
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-219"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 6
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-220"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 7
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-221"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 8
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-222"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 9
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-223"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 10
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-224"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 11
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-225"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 12
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-226"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 13
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-227"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 14
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-228"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 15
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-229"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 16
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-230"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 17
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-231"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 18
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-232"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      description 19
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Items List Two posts 1`] = `
+<div>
+  <div
+    className="MuiBox-root MuiBox-root-99"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      content1
+    </p>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-130"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      content2
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Posts List Empty List 1`] = `
+<div>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-561"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          Don't exist any post
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+          data-shrink={false}
+          htmlFor="standard-basic"
+          id="standard-basic-label"
+        >
+          Novo Post
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiInput-input"
+            disabled={false}
+            id="standard-basic"
+            name="description"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        disabled={false}
+        id="adicionarPost"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Add Post
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary Mui-disabled Mui-disabled"
+        disabled={true}
+        id="adicionarPost"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Clear posts
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Posts List Two posts 1`] = `
+<div>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-1020"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          post1
+           - 
+          pt
+        </p>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-1051"
+      >
+        <p
+          className="MuiTypography-root MuiTypography-body1"
+        >
+          post2
+           - 
+          en
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <div
+        className="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+          data-shrink={false}
+          htmlFor="standard-basic"
+          id="standard-basic-label"
+        >
+          Novo Post
+        </label>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiInput-input"
+            disabled={false}
+            id="standard-basic"
+            name="description"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-12 MuiGrid-grid-lg-12"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        disabled={false}
+        id="adicionarPost"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Add Post
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+        disabled={false}
+        id="adicionarPost"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Clear posts
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Posts list With some posts 1`] = `
 <div
   style={

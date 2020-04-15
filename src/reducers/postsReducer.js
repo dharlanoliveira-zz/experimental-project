@@ -1,8 +1,9 @@
 import {handleActions} from "redux-actions";
 
+
 const INITIAL_STATE = {posts: []}
 
-function get_post_success(action, {payload: {data}}) {
+function get_post_success(_, {payload: {data}}) {
     return { posts : data}
 }
 

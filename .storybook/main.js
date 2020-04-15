@@ -7,6 +7,7 @@ module.exports = {
         '@storybook/addon-a11y/register',
         '@storybook/addon-links/register',
         '@storybook/addon-knobs',
-        'storybook-addon-material-ui/register'
+        'storybook-addon-material-ui/register',
+        'storybook-addon-specifications/register'
     ],
 };
