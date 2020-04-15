@@ -8,6 +8,7 @@ import {postsServices} from "../service/postsService";
 function PostsList() {
 
     const dispatch = useDispatch()
+    const state = useSelector(state => state);
     const posts = useSelector(state => state.posts.posts);
 
     const postDescriptionInput = useRef();
@@ -15,7 +16,7 @@ function PostsList() {
     useEffect(() => {
         //dispatch(loadPosts())
         dispatch(postsActions.getPosts())
-    }, [])
+    }, [posts])
 
     function renderNoPosts(){
         return (
@@ -48,7 +49,7 @@ function PostsList() {
     
     return (
         <div style={{width: "200px"}}>
-            { posts.length > 0 && renderAllPosts(posts)}
+            { !_.isEmpty(posts) && renderAllPosts(posts)}
             { _.isEmpty(posts) > 0 && renderNoPosts()}
 
             <input ref={postDescriptionInput} type="text" name="description"/>

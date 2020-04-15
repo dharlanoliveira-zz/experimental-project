@@ -6,7 +6,6 @@ export function* getPostsSaga() {
         let posts = yield call(postsServices.getPosts)
         yield put({type: 'get_post_success', payload: posts});
     } catch (error) {
-        console.log(error)
         yield put({type: 'http_error', payload: error});
     }
 }

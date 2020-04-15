@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Posts list With some posts 1`] = `
+<div
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  <h3>
+    Don't exist any post
+  </h3>
+  <input
+    name="description"
+    type="text"
+  />
+  <button
+    id="adicionarPost"
+    onClick={[Function]}
+  >
+    Add post
+  </button>
+</div>
+`;
+
+exports[`Storyshots Posts list default 1`] = `
+<div
+  style={
+    Object {
+      "width": "200px",
+    }
+  }
+>
+  <h3>
+    Don't exist any post
+  </h3>
+  <input
+    name="description"
+    type="text"
+  />
+  <button
+    id="adicionarPost"
+    onClick={[Function]}
+  >
+    Add post
+  </button>
+</div>
+`;
