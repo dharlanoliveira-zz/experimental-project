@@ -5,7 +5,6 @@ import * as assert from "assert";
 
 describe('posts saga actions', () => {
 
-
     it('should clear posts saga return clear_post_success when sucess', () => {
         const postsGenerator = clearPostsSaga()
         assert.deepEqual(postsGenerator.next().value, call(postsServices.clearPosts))
