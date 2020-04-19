@@ -4,13 +4,10 @@ export const loadPosts = () => dispatch => {
     postsServices.getPosts()
         .then(
             resp => {
-                let allData = resp.data
-                let payload = {data: allData}
-                dispatch({ type: 'get_post_success', payload})
+                dispatch({ type: 'get_post_success', payload: {data: resp.data}})
             },
             error => {
-                let data = error.message
-                dispatch({ type: 'http_error', data })
+                dispatch({ type: 'http_error', data: error.message })
             }
         )
 };
@@ -23,8 +20,7 @@ export const newPost = (description) => dispatch => {
                 dispatch(loadPosts())
             },
             error => {
-                let data = error.message
-                dispatch({ type: 'http_error', data })
+                dispatch({ type: 'http_error', data: error.message })
             }
         )
 };

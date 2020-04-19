@@ -4,7 +4,6 @@ import {handleActions} from "redux-actions";
 const INITIAL_STATE = {posts: []}
 
 function get_post_success(_, {payload: {data}}) {
-    console.log("Reducing")
     return { posts : data}
 }
 

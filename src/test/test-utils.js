@@ -8,9 +8,8 @@ import {Provider} from "react-redux";
 import reducer from '../reducers'
 import React from "react";
 import createSagaMiddleware from "redux-saga";
-import dynamicMiddlewares, {addMiddleware, removeMiddleware, resetMiddlewares} from 'redux-dynamic-middlewares'
+import {resetMiddlewares} from 'redux-dynamic-middlewares'
 import rootSaga from "../sagas";
-
 
 
 function renderWithRedux(

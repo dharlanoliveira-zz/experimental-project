@@ -13,8 +13,6 @@ function PostsList() {
     const [description,setDescription] = useState("")
     const dispatch = useDispatch()
     const posts = useSelector(state => {
-        console.log("printing state")
-        console.log(state)
         return state.posts.posts
     })
 

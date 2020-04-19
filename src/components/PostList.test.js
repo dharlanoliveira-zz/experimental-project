@@ -33,7 +33,6 @@ test('should add new posts list', async () => {
     await waitFor(() => expect(axios.post).toHaveBeenCalledTimes(1))
     await waitFor(() => expect(axios.get).toHaveBeenCalledTimes(2))
     expect(screen.queryByText('post1 - pt')).toBeVisible()
-    console.log(axios.get.mock.calls)
 });
 
 test('should render posts list', async () => {
