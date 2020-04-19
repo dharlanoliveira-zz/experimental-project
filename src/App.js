@@ -5,6 +5,7 @@ function App() {
   return (
     <div align="center">
       <PostsList/>
+      
     </div>
   );
 }
