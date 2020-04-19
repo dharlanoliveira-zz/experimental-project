@@ -12,11 +12,15 @@ function PostsList() {
 
     const [description,setDescription] = useState("")
     const dispatch = useDispatch()
-    const posts = useSelector(state => state.posts.posts)
+    const posts = useSelector(state => {
+        console.log("printing state")
+        console.log(state)
+        return state.posts.posts
+    })
 
     useEffect(() => {
         dispatch(postsActions.getPosts())
-    }, [dispatch])
+    }, [])
 
     function renderNoPostsContent() {
         return (
@@ -52,7 +56,8 @@ function PostsList() {
             </Grid>
 
             <Grid item xs={12} md={12} lg={12}>
-                <TextField type="text" name="description" id="standard-basic"
+                <TextField type="text" name="description"
+                           datatest-id="novoPost" aria-labelledby="novoPost"
                            label="Novo Post" value={description}
                            onChange={(event) => {
                                 let { target: { value } } = event
@@ -60,7 +65,7 @@ function PostsList() {
                            }}/>
             </Grid>
             <Grid item xs={12} md={12} lg={12}>
-                <Button id="adicionarPost" onClick={() => handleAddPost()} variant="contained" color="primary">
+                <Button id="adicionarPost" onClick={() => handleAddPost()} variant="contained" color="primary" aria-label="">
                     Add Post
                 </Button>
                 <Button id="adicionarPost"

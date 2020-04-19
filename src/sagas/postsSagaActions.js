@@ -21,12 +21,12 @@ export function* getPostsSaga() {
 
 export function* newPostSaga(action) {
     try {
-        let {data: {language}} = yield call(postsServices.getPostLanguage, action.description)
+        let output = yield call(postsServices.getPostLanguage, action.description);
+        let {data: {language}} = output
         yield call(postsServices.newPost, action.description, language)
         yield put({type: 'new_post_success'});
         yield put({type: 'get_posts'});
     } catch (error) {
-        console.log(error)
         yield put({type: 'http_error', payload: error.response.data});
     }
 }
