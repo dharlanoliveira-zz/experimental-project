@@ -1,0 +1,66 @@
+.loading-item {
+    height: 3rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+    padding-left: 16px;
+  }
+.loading-item .glow-checkbox,
+.loading-item .glow-text span {
+animation: glow 1.5s ease-in-out infinite;
+background: #eee;
+color: transparent;
+cursor: progress;
+display: inline-block;
+}
+.loading-item .glow-checkbox {
+margin-right: 16px;
+width: 12px;
+height: 12px;
+}
+.loading-item + .loading-item {
+border-top: 1px solid #f0f9fb;
+}
+
+.list-items {
+    position: relative;
+    background: white;
+    min-height: 288px;
+  }
+  .list-items .select-placeholder {
+    border: none;
+    width: 48px;
+  }
+
+  .wrapper-message {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    height: auto;
+    transform: translate3d(0, -50%, 0);
+    text-align: center;
+  }
+  .wrapper-message [class^="icon-"],
+  .wrapper-message [class*=" icon-"] {
+    font-size: 48px;
+    line-height: 56px;
+    color: #2cc5d2;
+    display: block;
+  }
+  .wrapper-message .title-message {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    color: #555;
+  }
+  .wrapper-message .subtitle-message {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+  }
