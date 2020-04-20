@@ -27,7 +27,6 @@ test('should add new posts list', async () => {
         .mockResolvedValueOnce(languageData)
 
     const {debug} = renderWithRedux(<PostsList/>)
-    debug()
     fireEvent.change(getTextFieldByLabel(screen, 'Novo Post'), {target: {value: '23'}})
     fireEvent.click(screen.getByText('Add Post'))
     await waitFor(() => expect(axios.post).toHaveBeenCalledTimes(1))
@@ -44,7 +43,6 @@ test('should render posts list', async () => {
 
     const {debug} = renderWithRedux(<PostsList/>)
     await waitFor(() => expect(axios.get).toHaveBeenCalledTimes(1))
-    debug()
     await screen.findByText('post1 - pt')
     expect(screen.queryByText('post1 - pt')).toBeVisible()
     expect(screen.queryByText('post2 - en')).toBeVisible()
